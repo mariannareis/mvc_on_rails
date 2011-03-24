@@ -14,6 +14,6 @@ Description goes here.
 
 == Copyright
 
-Copyright (c) 2011 Natanael de Araújo. See LICENSE.txt for
-further details.
+Copyright (c) 2011 Marianna Siqueira Reis, Natanael de Araújo, Ruhan Ferreira Almeida.
+See LICENSE.txt for further details.
 
