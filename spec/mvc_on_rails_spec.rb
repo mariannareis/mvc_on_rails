@@ -6,4 +6,9 @@ describe MvcOnRails do
     subject.should be_a(Module)
   end
 
+  it "should start" do
+    subject.should respond_to(:start).with(2)
+  end
+
 end
+

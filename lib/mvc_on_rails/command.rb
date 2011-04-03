@@ -14,3 +14,6 @@ OptionParser.new do |opts|
 
   opts.parse!
 end
+
+MvcOnRails.start(options)
+
