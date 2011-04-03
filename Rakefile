@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 require 'rubygems'
 require 'bundler'
 begin
@@ -13,12 +15,13 @@ require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "mvc_on_rails"
-  gem.homepage = "http://github.com/natanael-araujo/mvc_on_rails"
+  gem.homepage = "http://github.com/mariannareis/mvc_on_rails"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
-  gem.email = "internael@gmail.com"
-  gem.authors = ["Natanael de Araújo"]
+  gem.summary = %Q{Te ajuda a seguir o MVC.}
+  gem.description = %Q{A gem mvc_on_rails varre o código do seu projeto Rails 3 em busca de trechos que agridam o padrão arquitetural MVC.}
+  gem.email = "mvconrails@googlegroups.com"
+  gem.authors = ["Marianna Siqueira Reis, Natanael Araújo, Ruhan Ferreira Almeida"]
+  gem.executables = ['mvc_on_rails']
   # Include your dependencies below. Runtime dependencies are required when using your gem,
   # and development dependencies are only needed for development (ie running rake tasks, tests, etc)
   #  gem.add_runtime_dependency 'jabber4r', '> 0.1'
