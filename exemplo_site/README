@@ -1,0 +1,42 @@
+== Welcome to Am(a)dora website
+
+I am developing Rails applications since 10/2009 and I was interested in using Heroku and a CMS to develop with Rails. In addition, I had the idea of do my own website agregating my blogs and works that I did professionaly or not.
+
+I like the agile way to develop (with tdd, bdd etc) and I will aggregate this to the project when possible.
+
+== This project uses:
+
+* Refinery CMS
+* Ruby 1.9.2
+* Rails 3
+* Sqlite3
+* Heroku
+
+== This project cost:
+
+* $ 0,00
+
+== All this project code is:
+
+* At Github.com
+
+== This project objective is:
+
+* Always be a free project, 100% open-source, in order to be useful for people looking for simple and inexpensive idea to build your own website. A way that I found to learn more and share the learning...
+
+== The application objective is:
+
+* Be a source of inspiration and encouragement to the professionals and amateurs (in English I miss the pun! rs) of the related areas and also be a free showcase of what I've done.
+
+== License
+
+Clone the code, modify it, replicate it as many times as necessary!
+
+Use also, when you want, the contents of the application. Just remember to cite the source! It is an excellent practice that encourages the free content will always be kept that way!
+
+Do not copy content from any source by simply copying! This does not add anything to you, you gain nothing with it, and there's nothing better than to create or to give your touch to your stuff.
+
+== The website adress
+
+Access in http://amadora.heroku.com or http://amadora.ws (only this I bougth, R$19,00/year! :D)
+
