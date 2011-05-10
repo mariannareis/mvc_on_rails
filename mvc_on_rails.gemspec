@@ -8,12 +8,10 @@ Gem::Specification.new do |s|
   s.version = "0.0.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Marianna Siqueira Reis, Natanael Araújo, Ruhan Ferreira Almeida"]
-  s.date = %q{2011-04-03}
-  s.default_executable = %q{mvc_on_rails}
-  s.description = %q{A gem mvc_on_rails varre o código do seu projeto Rails 3 em busca de trechos que agridam o padrão arquitetural MVC.}
+  s.authors = [%q{Marianna Siqueira Reis, Natanael Araújo, Ruhan Ferreira Almeida}]
+  s.date = %q{2011-05-10}
   s.email = %q{mvconrails@googlegroups.com}
-  s.executables = ["mvc_on_rails"]
+  s.executables = [%q{mvc_on_rails}]
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.rdoc"
@@ -28,18 +26,126 @@ Gem::Specification.new do |s|
     "VERSION",
     "autotest/discover.rb",
     "bin/mvc_on_rails",
+    "exemplo_site/.gitignore",
+    "exemplo_site/Gemfile",
+    "exemplo_site/Gemfile.backup",
+    "exemplo_site/README",
+    "exemplo_site/Rakefile",
+    "exemplo_site/app/controllers/application_controller.rb",
+    "exemplo_site/app/helpers/application_helper.rb",
+    "exemplo_site/app/views/layouts/application.html.erb",
+    "exemplo_site/app/views/pages/rss.rhxml",
+    "exemplo_site/app/views/sitemap/index.xml.builder",
+    "exemplo_site/autotest/autotest.rb",
+    "exemplo_site/autotest/discover.rb",
+    "exemplo_site/config.ru",
+    "exemplo_site/config/application.rb",
+    "exemplo_site/config/boot.rb",
+    "exemplo_site/config/cucumber.yml",
+    "exemplo_site/config/database.yml",
+    "exemplo_site/config/database.yml.mysql",
+    "exemplo_site/config/database.yml.postgresql",
+    "exemplo_site/config/database.yml.sqlite3",
+    "exemplo_site/config/environment.rb",
+    "exemplo_site/config/environments/development.rb",
+    "exemplo_site/config/environments/production.rb",
+    "exemplo_site/config/environments/test.rb",
+    "exemplo_site/config/i18n-js.yml",
+    "exemplo_site/config/initializers/backtrace_silencers.rb",
+    "exemplo_site/config/initializers/devise.rb",
+    "exemplo_site/config/initializers/inflections.rb",
+    "exemplo_site/config/initializers/mime_types.rb",
+    "exemplo_site/config/initializers/secret_token.rb",
+    "exemplo_site/config/initializers/session_store.rb",
+    "exemplo_site/config/locales/en.yml",
+    "exemplo_site/config/routes.rb",
+    "exemplo_site/config/settings.rb",
+    "exemplo_site/db/migrate/20110204121836_create_refinerycms_authentication_schema.rb",
+    "exemplo_site/db/migrate/20110204121837_add_missing_indexes_to_roles_users.rb",
+    "exemplo_site/db/migrate/20110204121838_change_to_devise_users_table.rb",
+    "exemplo_site/db/migrate/20110204121839_add_remember_created_at_to_users.rb",
+    "exemplo_site/db/migrate/20110204121840_create_refinerycms_core_schema.rb",
+    "exemplo_site/db/migrate/20110204121841_add_locale_to_slugs.rb",
+    "exemplo_site/db/migrate/20110204121842_create_refinerycms_images_schema.rb",
+    "exemplo_site/db/migrate/20110204121843_create_refinerycms_pages_schema.rb",
+    "exemplo_site/db/migrate/20110204121844_translate_page_plugin.rb",
+    "exemplo_site/db/migrate/20110204121845_remove_cached_slug_from_pages.rb",
+    "exemplo_site/db/migrate/20110204121846_create_refinerycms_resources_schema.rb",
+    "exemplo_site/db/migrate/20110204121847_create_refinerycms_settings_schema.rb",
+    "exemplo_site/db/migrate/20110204121848_add_value_type_to_refinery_settings.rb",
+    "exemplo_site/db/schema.rb",
+    "exemplo_site/db/seeds.rb",
+    "exemplo_site/db/seeds/pages.rb",
+    "exemplo_site/db/seeds/portfolio.rb",
+    "exemplo_site/lib/tasks/.gitkeep",
+    "exemplo_site/public/404.html",
+    "exemplo_site/public/422.html",
+    "exemplo_site/public/500.html",
+    "exemplo_site/public/favicon.ico",
+    "exemplo_site/public/images/background.png",
+    "exemplo_site/public/images/content-menu.png",
+    "exemplo_site/public/images/content.png",
+    "exemplo_site/public/images/footer.png",
+    "exemplo_site/public/images/icone_delicious.png",
+    "exemplo_site/public/images/icone_feeds.png",
+    "exemplo_site/public/images/icone_flickr.png",
+    "exemplo_site/public/images/icone_github.png",
+    "exemplo_site/public/images/icone_skype.png",
+    "exemplo_site/public/images/icone_tumblr.png",
+    "exemplo_site/public/images/icone_twitter.png",
+    "exemplo_site/public/images/icone_wordpress.png",
+    "exemplo_site/public/images/link-about-s.png",
+    "exemplo_site/public/images/link-about.png",
+    "exemplo_site/public/images/link-audiovideo-s.png",
+    "exemplo_site/public/images/link-audiovideo.png",
+    "exemplo_site/public/images/link-design-s.png",
+    "exemplo_site/public/images/link-design.png",
+    "exemplo_site/public/images/link-dev-s.png",
+    "exemplo_site/public/images/link-dev.png",
+    "exemplo_site/public/images/link-texts-s.png",
+    "exemplo_site/public/images/link-texts.png",
+    "exemplo_site/public/images/linkcc.png",
+    "exemplo_site/public/images/linkcss.png",
+    "exemplo_site/public/images/linkxhtml.png",
+    "exemplo_site/public/images/sidebar-blog1-s.png",
+    "exemplo_site/public/images/sidebar-blog1.png",
+    "exemplo_site/public/images/sidebar-blog2-s.png",
+    "exemplo_site/public/images/sidebar-blog2.png",
+    "exemplo_site/public/images/sidebar-blogroll-s.png",
+    "exemplo_site/public/images/sidebar-blogroll.png",
+    "exemplo_site/public/images/sidebar-contact-s.png",
+    "exemplo_site/public/images/sidebar-contact.png",
+    "exemplo_site/public/images/subtitle.png",
+    "exemplo_site/public/images/title.png",
+    "exemplo_site/public/index.html.backup",
+    "exemplo_site/public/javascripts/.gitkeep",
+    "exemplo_site/public/javascripts/admin.js",
+    "exemplo_site/public/javascripts/application.js",
+    "exemplo_site/public/javascripts/jquery/jquery-1.4.2.min.js",
+    "exemplo_site/public/javascripts/jquery/jquery-1.5.min.js",
+    "exemplo_site/public/javascripts/rails.js",
+    "exemplo_site/public/robots.txt",
+    "exemplo_site/public/stylesheets/.gitkeep",
+    "exemplo_site/public/stylesheets/application.css",
+    "exemplo_site/script/rails",
+    "exemplo_site/spec/rcov.opts",
+    "exemplo_site/spec/spec_helper.rb",
+    "exemplo_site/vendor/plugins/.gitkeep",
+    "lib/getfiles.rb",
     "lib/mvc_on_rails.rb",
     "lib/mvc_on_rails/command.rb",
     "mvc_on_rails.gemspec",
+    "spec/get_files_spec.rb",
     "spec/mvc_on_rails_spec.rb",
     "spec/spec_helper.rb"
   ]
   s.homepage = %q{http://github.com/mariannareis/mvc_on_rails}
-  s.licenses = ["MIT"]
-  s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.6.2}
-  s.summary = %q{Te ajuda a seguir o MVC.}
+  s.licenses = [%q{MIT}]
+  s.require_paths = [%q{lib}]
+  s.rubygems_version = %q{1.8.1}
+  s.summary = %q{Still in early development.}
   s.test_files = [
+    "spec/get_files_spec.rb",
     "spec/mvc_on_rails_spec.rb",
     "spec/spec_helper.rb"
   ]
@@ -48,23 +154,23 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_development_dependency(%q<ZenTest>, ["~> 4.5.0"])
-      s.add_development_dependency(%q<rspec>, ["~> 2.3.0"])
-      s.add_development_dependency(%q<bundler>, ["~> 1.0.0"])
-      s.add_development_dependency(%q<jeweler>, ["~> 1.5.2"])
+      s.add_development_dependency(%q<ZenTest>, [">= 0"])
+      s.add_development_dependency(%q<rspec>, [">= 0"])
+      s.add_development_dependency(%q<bundler>, [">= 0"])
+      s.add_development_dependency(%q<jeweler>, [">= 0"])
       s.add_development_dependency(%q<rcov>, [">= 0"])
     else
-      s.add_dependency(%q<ZenTest>, ["~> 4.5.0"])
-      s.add_dependency(%q<rspec>, ["~> 2.3.0"])
-      s.add_dependency(%q<bundler>, ["~> 1.0.0"])
-      s.add_dependency(%q<jeweler>, ["~> 1.5.2"])
+      s.add_dependency(%q<ZenTest>, [">= 0"])
+      s.add_dependency(%q<rspec>, [">= 0"])
+      s.add_dependency(%q<bundler>, [">= 0"])
+      s.add_dependency(%q<jeweler>, [">= 0"])
       s.add_dependency(%q<rcov>, [">= 0"])
     end
   else
-    s.add_dependency(%q<ZenTest>, ["~> 4.5.0"])
-    s.add_dependency(%q<rspec>, ["~> 2.3.0"])
-    s.add_dependency(%q<bundler>, ["~> 1.0.0"])
-    s.add_dependency(%q<jeweler>, ["~> 1.5.2"])
+    s.add_dependency(%q<ZenTest>, [">= 0"])
+    s.add_dependency(%q<rspec>, [">= 0"])
+    s.add_dependency(%q<bundler>, [">= 0"])
+    s.add_dependency(%q<jeweler>, [">= 0"])
     s.add_dependency(%q<rcov>, [">= 0"])
   end
 end
