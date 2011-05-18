@@ -1,1 +1,0 @@
-var custom_wymeditor_boot_options={};
